@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.arkapps.onlinetestapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_subCategoryRootFragment"
+            app:destination="@id/subCategoryRootFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.arkapps.onlinetestapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.arkapps.onlinetestapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/subCategoryRootFragment"
+        android:name="com.arkapps.onlinetestapp.frgm.SubCategoryRootFragment"
+        android:label="{label}"
+        tools:layout="@layout/fragment_sub_category_root">
+
+        <argument
+            android:name="category"
+            app:argType="com.arkapps.onlinetestapp.cls.CategoryData" />
+        <argument
+            android:name="label"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_subCategoryRootFragment_to_questionRootFragment"
+            app:destination="@id/questionRootFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.arkapps.onlinetestapp.frgm.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/phoneLoginFragment"
+        android:name="com.arkapps.onlinetestapp.auth.PhoneLoginFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_phone_login">
+        <action
+            android:id="@+id/action_phoneLoginFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.arkapps.onlinetestapp.auth.OTPFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_o_t_p" >
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+    </fragment>
+    <dialog
+        android:id="@+id/loginFragment"
+        android:name="com.arkapps.onlinetestapp.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/questionRootFragment"
+        android:name="com.arkapps.onlinetestapp.frgm.QuestionRootFragment"
+        android:label="{label}"
+        tools:layout="@layout/fragment_question_root" >
+        <argument
+            android:name="quizData"
+            app:argType="com.arkapps.onlinetestapp.cls.QuizData" />
+        <argument
+            android:name="label"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_questionRootFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/questionRootFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <dialog
+        android:id="@+id/summeryFragment"
+        android:name="com.arkapps.onlinetestapp.frgm.SummeryFragment"
+        android:label="fragment_summery"
+        tools:layout="@layout/fragment_summery" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.arkapps.onlinetestapp.frgm.ResultFragment"
+        android:label="ResultFragment" >
+        <argument
+            android:name="resultData"
+            app:argType="com.arkapps.onlinetestapp.cls.ResultData" />
+        <action
+            android:id="@+id/action_resultFragment_to_solutionFragment"
+            app:destination="@id/solutionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/solutionFragment"
+        android:name="com.arkapps.onlinetestapp.frgm.SolutionFragment"
+        android:label="SolutionFragment" >
+        <argument
+            android:name="resultId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

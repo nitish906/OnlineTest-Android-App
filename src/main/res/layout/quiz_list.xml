@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/five_dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:contentPadding="@dimen/twenty_dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/quiz_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:text="Quiz Title"
+            android:textSize="@dimen/fifteen_sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/twelve_dp"
+                android:layout_height="@dimen/twelve_dp"
+                android:src="@drawable/round_question" />
+
+            <TextView
+                android:id="@+id/total_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:textColor="@color/light_black"
+                android:layout_marginStart="@dimen/ten_dp"
+                android:text="10"
+                android:textSize="@dimen/twelve_sp" />
+
+            <ImageView
+                android:layout_width="@dimen/twelve_dp"
+                android:layout_height="@dimen/twelve_dp"
+                android:layout_marginStart="@dimen/twenty_dp"
+                android:src="@drawable/timer" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:textColor="@color/light_black"
+                android:layout_marginStart="@dimen/ten_dp"
+                android:text="10 min"
+                android:textSize="@dimen/twelve_sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|bottom"
+                android:textColor="@color/green_light"
+                android:text="@string/free"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/fifty_dp"
+                android:textSize="@dimen/fifteen_sp" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/start_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:text="@string/start_now"
+                app:cornerRadius="16dp"
+                android:textSize="@dimen/ten_sp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

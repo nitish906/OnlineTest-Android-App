@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/fifty_dp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/hundred_fifty_dp"
+            android:src="@drawable/login_image"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_to_continue"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:id="@+id/login"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:gravity="center_horizontal"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

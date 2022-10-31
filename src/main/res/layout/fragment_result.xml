@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/celebrating"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/two_dp"
+                app:cardUseCompatPadding="true"
+
+                app:contentPadding="@dimen/twenty_dp"
+                android:layout_margin="@dimen/five_dp"
+                app:cardCornerRadius="@dimen/five_dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--    Total marks-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twenty_dp"
+                            android:layout_height="@dimen/twenty_dp"
+                            android:src="@drawable/ic_right_round"
+                            android:tintMode="add"
+                            app:tint="@color/purple_500" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:text="@string/total_marks"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/total_marks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                    </LinearLayout>
+                    <!--   your marks -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twenty_dp"
+                            android:layout_height="@dimen/twenty_dp"
+                            android:src="@drawable/ic_right_round" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:text="@string/your_marks"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/user_marks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                    </LinearLayout>
+                    <!--        UnAttempted Questions-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twenty_dp"
+                            android:layout_height="@dimen/twenty_dp"
+                            android:src="@drawable/timer" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:text="@string/time_taken"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/user_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:id="@+id/ad_container2"/>
+
+
+            <!--            Quiz Result detail-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/two_dp"
+                app:cardUseCompatPadding="true"
+
+                app:contentPadding="@dimen/twenty_dp"
+                android:layout_margin="@dimen/five_dp"
+                app:cardCornerRadius="@dimen/five_dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--        total_question-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twenty_dp"
+                            android:layout_height="@dimen/twenty_dp"
+                            android:src="@drawable/round_question" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:text="@string/total_question"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/total_question"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                    </LinearLayout>
+
+
+                    <!--        Correct answer-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twenty_dp"
+                            android:layout_height="@dimen/twenty_dp"
+                            android:src="@drawable/ic_right_round" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:text="@string/right_answer"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/right_answer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                    </LinearLayout>
+                    <!--        Incorrect answer -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twenty_dp"
+                            android:layout_height="@dimen/twenty_dp"
+                            android:src="@drawable/wrong_round" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:text="@string/incorrect_answer"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/wrong_answer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                    </LinearLayout>
+                    <!--        UnAttempted Questions-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/twenty_dp"
+                            android:layout_height="@dimen/twenty_dp"
+                            android:src="@drawable/explanation_sign" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:text="@string/not_answered"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                        <TextView
+                            android:id="@+id/not_answered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/twenty_dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/solution"
+                android:textSize="@dimen/fifteen_sp"
+                android:id="@+id/solution"
+                app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+                app:iconGravity="end"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/twenty_dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

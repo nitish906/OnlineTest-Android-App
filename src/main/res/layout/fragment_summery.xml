@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".frgm.SummeryFragment">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/twenty_dp"
+     android:layout_marginBottom="@dimen/hundred_dp"
+     android:padding="@dimen/twenty_dp"
+     android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal">
+   <ImageView
+       android:layout_width="@dimen/twenty_dp"
+       android:layout_height="@dimen/twenty_dp"
+       android:src="@drawable/green_circle"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Answered"
+       android:layout_marginStart="@dimen/ten_dp"
+       android:textSize="@dimen/fifteen_sp"
+       android:textColor="@color/black"/>
+
+   <ImageView
+       android:layout_width="@dimen/twenty_dp"
+       android:layout_height="@dimen/twenty_dp"
+       android:src="@drawable/circle"
+       android:layout_marginStart="@dimen/fifty_dp"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Not Answered"
+       android:layout_marginStart="@dimen/ten_dp"
+       android:textSize="@dimen/fifteen_sp"
+       android:textColor="@color/black"/>
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+   android:background="@color/light_black"
+   android:layout_marginTop="@dimen/twenty_dp"
+   android:layout_marginBottom="@dimen/twenty_dp"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/rv_view"/>
+
+
+
+
+ </LinearLayout>
+
+</LinearLayout>

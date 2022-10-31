@@ -1,0 +1,48 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+        <dimen name="twenty_dp">20dp</dimen>
+        <dimen name="twenty_sp">20sp</dimen>
+        <dimen name="ten_dp">10dp</dimen>
+        <dimen name="sixty_dp">60dp</dimen>
+        <dimen name="fifty_dp">50dp</dimen>
+        <dimen name="one_twenty_dp">120dp</dimen>
+        <dimen name="one_fifty_dp">150dp</dimen>
+        <dimen name="fifteen_sp">15sp</dimen>
+        <dimen name="five_dp">5dp</dimen>
+        <dimen name="fifteen_dp">15dp</dimen>
+        <dimen name="zero_dp">0dp</dimen>
+        <dimen name="ten_sp">10sp</dimen>
+        <dimen name="eighty_dp">80dp</dimen>
+        <dimen name="hundred_dp">100dp</dimen>
+        <dimen name="hundred_twenty_dp">120dp</dimen>
+        <dimen name="thirty_dp">30dp</dimen>
+        <dimen name="twelve_sp">12sp</dimen>
+        <dimen name="forty_dp">40dp</dimen>
+
+        <dimen name="four_dp">4dp</dimen>
+        <dimen name="two_dp">2dp</dimen>
+        <dimen name="thirty_sp">30sp</dimen>
+        <dimen name="hundred_fifty_dp">150dp</dimen>
+
+        <dimen name="invoice_element_margin">10dp</dimen>
+
+        <dimen name="card_elevation">4dp</dimen>
+        <dimen name="card_radius">4dp</dimen>
+        <dimen name="card_margin">2dp</dimen>
+        <dimen name="eighteen_sp">18sp</dimen>
+        <dimen name="twenty_five_sp">25sp</dimen>
+        <dimen name="twelve_dp">12dp</dimen>
+        <dimen name="text_margin">16dp</dimen>
+        <dimen name="twenty_five_dp">25dp</dimen>
+
+
+
+
+
+</resources>
