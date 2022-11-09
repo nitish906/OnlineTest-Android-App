@@ -1,6 +1,8 @@
 # OnlineTest-App
 An Exam-Book Android Application. In this Application, the User Can give their Online Test and Check their Knowledge and Also Check their Results. This Application is Similar to Testbook App.
 
+# Note:
+- Xml file Not there in this Repo.Only For Java Logic Part Code will be there.
 
 <img src="https://github.com/nitish906/OnlineTest-Android-App/blob/main/01.jpg?raw=true" style=" width: 50% hight: 20%; align: center; display: inline-block;" data-target="animated-image.originalImage">
 
